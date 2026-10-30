@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.venv/
+reruns/
+checkpoints/
+*.pth
+*.pt
+*.npy
+*.npz
+*.csv
+*.jsonl
+*.part*
+.env

@@ -1,0 +1,93 @@
+{
+  "status": "eligible",
+  "qualified_count_before_cap": 22,
+  "selected_count": 15,
+  "selected_instance_keys": [
+    "pump_station_scheduling__high__i3",
+    "pump_station_scheduling__high__i2",
+    "pump_station_scheduling__low__i0",
+    "reservoir_operation__low__i4",
+    "reservoir_operation__low__i0",
+    "reservoir_operation__medium__i0",
+    "wastewater_aeration_control__low__i0",
+    "wastewater_aeration_control__low__i3",
+    "reservoir_operation__low__i2",
+    "pump_station_scheduling__low__i4",
+    "pump_station_scheduling__high__i1",
+    "pump_station_scheduling__high__i0",
+    "pump_station_scheduling__low__i3",
+    "reservoir_operation__low__i1",
+    "pump_station_scheduling__low__i2"
+  ],
+  "excluded": {
+    "reservoir_operation__medium__i2": [
+      "spearman_low_high"
+    ],
+    "reservoir_operation__medium__i3": [
+      "spearman_low_high"
+    ],
+    "reservoir_operation__medium__i4": [
+      "spearman_low_high"
+    ],
+    "reservoir_operation__high__i0": [
+      "spearman_low_high"
+    ],
+    "reservoir_operation__high__i1": [
+      "spearman_low_high"
+    ],
+    "reservoir_operation__high__i2": [
+      "spearman_low_high"
+    ],
+    "reservoir_operation__high__i3": [
+      "spearman_low_high"
+    ],
+    "reservoir_operation__high__i4": [
+      "spearman_low_high"
+    ],
+    "pump_station_scheduling__medium__i0": [
+      "spearman_low_high"
+    ],
+    "pump_station_scheduling__medium__i4": [
+      "spearman_low_high"
+    ],
+    "wastewater_aeration_control__low__i1": [
+      "spearman_low_high"
+    ],
+    "wastewater_aeration_control__low__i2": [
+      "spearman_low_high"
+    ],
+    "wastewater_aeration_control__low__i4": [
+      "spearman_low_high"
+    ],
+    "wastewater_aeration_control__medium__i0": [
+      "spearman_low_high"
+    ],
+    "wastewater_aeration_control__medium__i1": [
+      "spearman_low_high"
+    ],
+    "wastewater_aeration_control__medium__i2": [
+      "spearman_low_high"
+    ],
+    "wastewater_aeration_control__medium__i3": [
+      "spearman_low_high"
+    ],
+    "wastewater_aeration_control__medium__i4": [
+      "spearman_low_high"
+    ],
+    "wastewater_aeration_control__high__i0": [
+      "spearman_low_high"
+    ],
+    "wastewater_aeration_control__high__i1": [
+      "spearman_low_high"
+    ],
+    "wastewater_aeration_control__high__i2": [
+      "spearman_low_high"
+    ],
+    "wastewater_aeration_control__high__i3": [
+      "spearman_low_high"
+    ],
+    "wastewater_aeration_control__high__i4": [
+      "spearman_low_high"
+    ]
+  }
+}

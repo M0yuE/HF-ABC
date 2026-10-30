@@ -1,0 +1,15 @@
+{
+  "source_search_seed": 2026,
+  "best_score": 0.6070712804794312,
+  "best_config": {
+    "seq_len": 512,
+    "d_model": 256,
+    "n_heads": 16,
+    "e_layers": 3,
+    "d_ff": 512,
+    "dropout": 0.112113,
+    "learning_rate": 9.373920558640758e-05,
+    "batch_size": 256,
+    "csg_reduction": 4
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "seq_len": 512,
+  "d_model": 256,
+  "n_heads": 16,
+  "e_layers": 3,
+  "d_ff": 256,
+  "dropout": 0.078495,
+  "learning_rate": 9.373920558640758e-05,
+  "batch_size": 128,
+  "csg_reduction": 4
+}

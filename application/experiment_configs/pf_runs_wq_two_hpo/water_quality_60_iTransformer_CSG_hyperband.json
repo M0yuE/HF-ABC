@@ -1,0 +1,1501 @@
+{
+  "method": "hyperband",
+  "display_name": "Hyperband",
+  "method_full_name": "Synchronous Hyperband Successive Halving",
+  "search_seeds": [
+    2026
+  ],
+  "final_seeds": [
+    2026,
+    2027,
+    2028
+  ],
+  "search_summary": {
+    "method": "hyperband",
+    "display_name": "Hyperband",
+    "method_full_name": "Synchronous Hyperband Successive Halving",
+    "mf_min_epochs": 1,
+    "mf_max_epochs": 20,
+    "mf_eta": 3,
+    "budget_epochs": 312,
+    "search_budget_epochs": 232,
+    "verify_top_k": 4,
+    "verify_epochs": 20,
+    "selected_search_seed": 2026,
+    "selected_best_config": {
+      "seq_len": 192,
+      "d_model": 512,
+      "n_heads": 8,
+      "e_layers": 3,
+      "d_ff": 2048,
+      "dropout": 0.125285,
+      "learning_rate": 0.00020996679466736134,
+      "batch_size": 512,
+      "csg_reduction": 4
+    },
+    "selected_val_mse": 0.4892221987247467,
+    "per_search_seed": [
+      {
+        "search_seed": 2026,
+        "selected_config": {
+          "seq_len": 192,
+          "d_model": 512,
+          "n_heads": 8,
+          "e_layers": 3,
+          "d_ff": 2048,
+          "dropout": 0.125285,
+          "learning_rate": 0.00020996679466736134,
+          "batch_size": 512,
+          "csg_reduction": 4
+        },
+        "selected_score": 0.4892221987247467,
+        "selected_val_mse": 0.4892221987247467,
+        "budget_epochs": 312,
+        "search_budget_epochs": 232,
+        "spent_epochs_before_verify": 227,
+        "verify_epochs": 20,
+        "verify_top_k": 4,
+        "verify_seed": 2026,
+        "bracket_summaries": [
+          {
+            "bracket_index": 1,
+            "s": 2,
+            "rungs": [
+              {
+                "rung": 0,
+                "fidelity": 2,
+                "n_evaluated": 9,
+                "keep_n": 3,
+                "best_score": 0.4923114478588104,
+                "best_config": {
+                  "seq_len": 192,
+                  "d_model": 768,
+                  "n_heads": 8,
+                  "e_layers": 4,
+                  "d_ff": 256,
+                  "dropout": 0.087727,
+                  "learning_rate": 0.0005762000933694784,
+                  "batch_size": 512,
+                  "csg_reduction": 8
+                }
+              },
+              {
+                "rung": 1,
+                "fidelity": 6,
+                "n_evaluated": 3,
+                "keep_n": 1,
+                "best_score": 0.488724023103714,
+                "best_config": {
+                  "seq_len": 192,
+                  "d_model": 768,
+                  "n_heads": 8,
+                  "e_layers": 4,
+                  "d_ff": 256,
+                  "dropout": 0.087727,
+                  "learning_rate": 0.0005762000933694784,
+                  "batch_size": 512,
+                  "csg_reduction": 8
+                }
+              },
+              {
+                "rung": 2,
+                "fidelity": 20,
+                "n_evaluated": 1,
+                "keep_n": 1,
+                "best_score": 0.4900553822517395,
+                "best_config": {
+                  "seq_len": 192,
+                  "d_model": 768,
+                  "n_heads": 8,
+                  "e_layers": 4,
+                  "d_ff": 256,
+                  "dropout": 0.087727,
+                  "learning_rate": 0.0005762000933694784,
+                  "batch_size": 512,
+                  "csg_reduction": 8
+                }
+              }
+            ],
+            "spent_epochs_after_bracket": 56
+          },
+          {
+            "bracket_index": 2,
+            "s": 1,
+            "rungs": [
+              {
+                "rung": 0,
+                "fidelity": 7,
+                "n_evaluated": 5,
+                "keep_n": 1,
+                "best_score": 0.4898756742477417,
+                "best_config": {
+                  "seq_len": 192,
+                  "d_model": 512,
+                  "n_heads": 8,
+                  "e_layers": 3,
+                  "d_ff": 2048,
+                  "dropout": 0.125285,
+                  "learning_rate": 0.00020996679466736134,
+                  "batch_size": 512,
+                  "csg_reduction": 4
+                }
+              },
+              {
+                "rung": 1,
+                "fidelity": 20,
+                "n_evaluated": 1,
+                "keep_n": 1,
+                "best_score": 0.4892221987247467,
+                "best_config": {
+                  "seq_len": 192,
+                  "d_model": 512,
+                  "n_heads": 8,
+                  "e_layers": 3,
+                  "d_ff": 2048,
+                  "dropout": 0.125285,
+                  "learning_rate": 0.00020996679466736134,
+                  "batch_size": 512,
+                  "csg_reduction": 4
+                }
+              }
+            ],
+            "spent_epochs_after_bracket": 111
+          },
+          {
+            "bracket_index": 3,
+            "s": 0,
+            "rungs": [
+              {
+                "rung": 0,
+                "fidelity": 20,
+                "n_evaluated": 3,
+                "keep_n": 3,
+                "best_score": 0.4926362633705139,
+                "best_config": {
+                  "seq_len": 336,
+                  "d_model": 512,
+                  "n_heads": 4,
+                  "e_layers": 3,
+                  "d_ff": 1024,
+                  "dropout": 0.165429,
+                  "learning_rate": 0.0005424276256679457,
+                  "batch_size": 128,
+                  "csg_reduction": 8
+                }
+              }
+            ],
+            "spent_epochs_after_bracket": 171
+          },
+          {
+            "bracket_index": 4,
+            "s": 2,
+            "rungs": [
+              {
+                "rung": 0,
+                "fidelity": 2,
+                "n_evaluated": 9,
+                "keep_n": 3,
+                "best_score": 0.4965420663356781,
+                "best_config": {
+                  "seq_len": 192,
+                  "d_model": 768,
+                  "n_heads": 4,
+                  "e_layers": 6,
+                  "d_ff": 2048,
+                  "dropout": 0.069371,
+                  "learning_rate": 0.00023271101326884092,
+                  "batch_size": 256,
+                  "csg_reduction": 8
+                }
+              },
+              {
+                "rung": 1,
+                "fidelity": 6,
+                "n_evaluated": 3,
+                "keep_n": 1,
+                "best_score": 0.488653302192688,
+                "best_config": {
+                  "seq_len": 192,
+                  "d_model": 768,
+                  "n_heads": 4,
+                  "e_layers": 6,
+                  "d_ff": 2048,
+                  "dropout": 0.069371,
+                  "learning_rate": 0.00023271101326884092,
+                  "batch_size": 256,
+                  "csg_reduction": 8
+                }
+              },
+              {
+                "rung": 2,
+                "fidelity": 20,
+                "n_evaluated": 1,
+                "keep_n": 1,
+                "best_score": 0.4924132227897644,
+                "best_config": {
+                  "seq_len": 192,
+                  "d_model": 768,
+                  "n_heads": 4,
+                  "e_layers": 6,
+                  "d_ff": 2048,
+                  "dropout": 0.069371,
+                  "learning_rate": 0.00023271101326884092,
+                  "batch_size": 256,
+                  "csg_reduction": 8
+                }
+              }
+            ],
+            "spent_epochs_after_bracket": 227
+          }
+        ],
+        "verified": [
+          {
+            "uid": "263960a834bc",
+            "score": 0.4892221987247467,
+            "val_mse": 0.4892221987247467,
+            "config": {
+              "seq_len": 192,
+              "d_model": 512,
+              "n_heads": 8,
+              "e_layers": 3,
+              "d_ff": 2048,
+              "dropout": 0.125285,
+              "learning_rate": 0.00020996679466736134,
+              "batch_size": 512,
+              "csg_reduction": 4
+            },
+            "parent_uid": "3aea4e856df6",
+            "status": "ok"
+          },
+          {
+            "uid": "d05acd357ab7",
+            "score": 0.4926362633705139,
+            "val_mse": 0.4926362633705139,
+            "config": {
+              "seq_len": 336,
+              "d_model": 512,
+              "n_heads": 4,
+              "e_layers": 3,
+              "d_ff": 1024,
+              "dropout": 0.165429,
+              "learning_rate": 0.0005424276256679457,
+              "batch_size": 128,
+              "csg_reduction": 8
+            },
+            "parent_uid": "c35c0ec93398",
+            "status": "ok"
+          },
+          {
+            "uid": "cb4e10eb96db",
+            "score": 0.514965832233429,
+            "val_mse": 0.514965832233429,
+            "config": {
+              "seq_len": 96,
+              "d_model": 256,
+              "n_heads": 8,
+              "e_layers": 8,
+              "d_ff": 2048,
+              "dropout": 0.125708,
+              "learning_rate": 9.48362159969377e-05,
+              "batch_size": 256,
+              "csg_reduction": 8
+            },
+            "parent_uid": "895c6cd4735e",
+            "status": "ok"
+          },
+          {
+            "uid": "214afc2c8c04",
+            "score": 0.7482898235321045,
+            "val_mse": 0.7482898235321045,
+            "config": {
+              "seq_len": 48,
+              "d_model": 512,
+              "n_heads": 16,
+              "e_layers": 1,
+              "d_ff": 2048,
+              "dropout": 0.087176,
+              "learning_rate": 0.00027962008624878747,
+              "batch_size": 256,
+              "csg_reduction": 8
+            },
+            "parent_uid": "81288d8863e3",
+            "status": "ok"
+          }
+        ],
+        "archive": [
+          {
+            "uid": "86ff9d536e8c",
+            "fidelity": 2,
+            "score": 0.5351443290710449,
+            "val_mse": 0.5351443290710449,
+            "status": "ok",
+            "parent_uid": null,
+            "train_time": 113.56921076774597,
+            "config": {
+              "seq_len": 96,
+              "d_model": 512,
+              "n_heads": 8,
+              "e_layers": 2,
+              "d_ff": 2048,
+              "dropout": 0.1,
+              "learning_rate": 0.0002,
+              "batch_size": 256,
+              "csg_reduction": 4
+            },
+            "extra": {
+              "seed": 2026,
+              "resume_requested": false,
+              "resume_supported": false,
+              "resume_ckpt": null,
+              "save_ckpt_requested": false,
+              "candidate_tag": "pf_s2026_st100_ep2_1646af",
+              "model_name": "iTransformer_CSG",
+              "setting": "WQ_GENERIC_60_iTransformer_CSG_pl60_sl96_bs256_pf_s2026_st100_ep2_7ca0708bb9",
+              "params": 6517948,
+              "requested_fidelity": 2,
+              "effective_patience": 2
+            }
+          },
+          {
+            "uid": "9b77f960ec10",
+            "fidelity": 2,
+            "score": 0.720050036907196,
+            "val_mse": 0.720050036907196,
+            "status": "ok",
+            "parent_uid": null,
+            "train_time": 178.22486925125122,
+            "config": {
+              "seq_len": 48,
+              "d_model": 512,
+              "n_heads": 8,
+              "e_layers": 6,
+              "d_ff": 256,
+              "dropout": 0.083493,
+              "learning_rate": 0.0002685521471334035,
+              "batch_size": 256,
+              "csg_reduction": 8
+            },
+            "extra": {
+              "seed": 2026,
+              "resume_requested": false,
+              "resume_supported": false,
+              "resume_ckpt": null,
+              "save_ckpt_requested": false,
+              "candidate_tag": "pf_s2026_st100_ep2_e7c34d",
+              "model_name": "iTransformer_CSG",
+              "setting": "WQ_GENERIC_60_iTransformer_CSG_pl60_sl48_bs256_pf_s2026_st100_ep2_a327daafa2",
+              "params": 8016508,
+              "requested_fidelity": 2,
+              "effective_patience": 2
+            }
+          },
+          {
+            "uid": "d83aaf6f2194",
+            "fidelity": 2,
+            "score": 0.50617516040802,
+            "val_mse": 0.50617516040802,
+            "status": "ok",
+            "parent_uid": null,
+            "train_time": 576.1618824005127,
+            "config": {
+              "seq_len": 192,
+              "d_model": 768,
+              "n_heads": 12,
+              "e_layers": 6,
+              "d_ff": 1024,
+              "dropout": 0.08599,
+              "learning_rate": 0.0002757759318977665,
+              "batch_size": 64,
+              "csg_reduction": 8
+            },
+            "extra": {
+              "seed": 2026,
+              "resume_requested": false,
+              "resume_supported": false,
+              "resume_ckpt": null,
+              "save_ckpt_requested": false,
+              "candidate_tag": "pf_s2026_st100_ep2_07594e",
+              "model_name": "iTransformer_CSG",
+              "setting": "WQ_GENERIC_60_iTransformer_CSG_pl60_sl192_bs64_pf_s2026_st100_ep2_e905f901fc",
+              "params": 23984796,
+              "requested_fidelity": 2,
+              "effective_patience": 2
+            }
+          },
+          {
+            "uid": "f7cc48cc19f6",
+            "fidelity": 2,
+            "score": 0.4923114478588104,
+            "val_mse": 0.4923114478588104,
+            "status": "ok",
+            "parent_uid": null,
+            "train_time": 153.26770853996277,
+            "config": {
+              "seq_len": 192,
+              "d_model": 768,
+              "n_heads": 8,
+              "e_layers": 4,
+              "d_ff": 256,
+              "dropout": 0.087727,
+              "learning_rate": 0.0005762000933694784,
+              "batch_size": 512,
+              "csg_reduction": 8
+            },
+            "extra": {
+              "seed": 2026,
+              "resume_requested": false,
+              "resume_supported": false,
+              "resume_ckpt": null,
+              "save_ckpt_requested": false,
+              "candidate_tag": "pf_s2026_st100_ep2_0ec80e",
+              "model_name": "iTransformer_CSG",
+              "setting": "WQ_GENERIC_60_iTransformer_CSG_pl60_sl192_bs512_pf_s2026_st100_ep2_61cda4e808",
+              "params": 11382940,
+              "requested_fidelity": 2,
+              "effective_patience": 2
+            }
+          },
+          {
+            "uid": "1a19d973248d",
+            "fidelity": 2,
+            "score": 0.5038979053497314,
+            "val_mse": 0.5038979053497314,
+            "status": "ok",
+            "parent_uid": null,
+            "train_time": 140.18480563163757,
+            "config": {
+              "seq_len": 512,
+              "d_model": 512,
+              "n_heads": 2,
+              "e_layers": 3,
+              "d_ff": 1024,
+              "dropout": 0.093818,
+              "learning_rate": 0.00020108738902167413,
+              "batch_size": 512,
+              "csg_reduction": 8
+            },
+            "extra": {
+              "seed": 2026,
+              "resume_requested": false,
+              "resume_supported": false,
+              "resume_ckpt": null,
+              "save_ckpt_requested": false,
+              "candidate_tag": "pf_s2026_st100_ep2_fc7c76",
+              "model_name": "iTransformer_CSG",
+              "setting": "WQ_GENERIC_60_iTransformer_CSG_pl60_sl512_bs512_pf_s2026_st100_ep2_02fba95fd3",
+              "params": 6668924,
+              "requested_fidelity": 2,
+              "effective_patience": 2
+            }
+          },
+          {
+            "uid": "80e8be617887",
+            "fidelity": 2,
+            "score": 0.49306535720825195,
+            "val_mse": 0.49306535720825195,
+            "status": "ok",
+            "parent_uid": null,
+            "train_time": 147.36537384986877,
+            "config": {
+              "seq_len": 192,
+              "d_model": 384,
+              "n_heads": 12,
+              "e_layers": 3,
+              "d_ff": 512,
+              "dropout": 0.109816,
+              "learning_rate": 0.0002603927926472226,
+              "batch_size": 128,
+              "csg_reduction": 4
+            },
+            "extra": {
+              "seed": 2026,
+              "resume_requested": false,
+              "resume_supported": false,
+              "resume_ckpt": null,
+              "save_ckpt_requested": false,
+              "candidate_tag": "pf_s2026_st100_ep2_d0eb66",
+              "model_name": "iTransformer_CSG",
+              "setting": "WQ_GENERIC_60_iTransformer_CSG_pl60_sl192_bs128_pf_s2026_st100_ep2_82ceb1e8a8",
+              "params": 3133212,
+              "requested_fidelity": 2,
+              "effective_patience": 2
+            }
+          },
+          {
+            "uid": "abb1af707543",
+            "fidelity": 2,
+            "score": 0.49244239926338196,
+            "val_mse": 0.49244239926338196,
+            "status": "ok",
+            "parent_uid": null,
+            "train_time": 366.91960430145264,
+            "config": {
+              "seq_len": 192,
+              "d_model": 768,
+              "n_heads": 8,
+              "e_layers": 3,
+              "d_ff": 4096,
+              "dropout": 0.088797,
+              "learning_rate": 0.0001864601792027156,
+              "batch_size": 512,
+              "csg_reduction": 4
+            },
+            "extra": {
+              "seed": 2026,
+              "resume_requested": false,
+              "resume_supported": false,
+              "resume_ckpt": null,
+              "save_ckpt_requested": false,
+              "candidate_tag": "pf_s2026_st100_ep2_5aa628",
+              "model_name": "iTransformer_CSG",
+              "setting": "WQ_GENERIC_60_iTransformer_CSG_pl60_sl192_bs512_pf_s2026_st100_ep2_97f75f2f5c",
+              "params": 26477052,
+              "requested_fidelity": 2,
+              "effective_patience": 2
+            }
+          },
+          {
+            "uid": "2623e6d7e95c",
+            "fidelity": 2,
+            "score": 0.514203667640686,
+            "val_mse": 0.514203667640686,
+            "status": "ok",
+            "parent_uid": null,
+            "train_time": 269.83314275741577,
+            "config": {
+              "seq_len": 192,
+              "d_model": 128,
+              "n_heads": 4,
+              "e_layers": 2,
+              "d_ff": 128,
+              "dropout": 0.155699,
+              "learning_rate": 0.0004776567201733679,
+              "batch_size": 64,
+              "csg_reduction": 8
+            },
+            "extra": {
+              "seed": 2026,
+              "resume_requested": false,
+              "resume_supported": false,
+              "resume_ckpt": null,
+              "save_ckpt_requested": false,
+              "candidate_tag": "pf_s2026_st100_ep2_6caef7",
+              "model_name": "iTransformer_CSG",
+              "setting": "WQ_GENERIC_60_iTransformer_CSG_pl60_sl192_bs64_pf_s2026_st100_ep2_5b4316520f",
+              "params": 236108,
+              "requested_fidelity": 2,
+              "effective_patience": 2
+            }
+          },
+          {
+            "uid": "9c3c1c1fdda9",
+            "fidelity": 2,
+            "score": 0.49902859330177307,
+            "val_mse": 0.49902859330177307,
+            "status": "ok",
+            "parent_uid": null,
+            "train_time": 198.2927610874176,
+            "config": {
+              "seq_len": 192,
+              "d_model": 384,
+              "n_heads": 4,
+              "e_layers": 6,
+              "d_ff": 1024,
+              "dropout": 0.118519,
+              "learning_rate": 0.00020599137011541777,
+              "batch_size": 512,
+              "csg_reduction": 8
+            },
+            "extra": {
+              "seed": 2026,
+              "resume_requested": false,
+              "resume_supported": false,
+              "resume_ckpt": null,
+              "save_ckpt_requested": false,
+              "candidate_tag": "pf_s2026_st100_ep2_66a425",
+              "model_name": "iTransformer_CSG",
+              "setting": "WQ_GENERIC_60_iTransformer_CSG_pl60_sl192_bs512_pf_s2026_st100_ep2_e1e4771386",
+              "params": 8419692,
+              "requested_fidelity": 2,
+              "effective_patience": 2
+            }
+          },
+          {
+            "uid": "134714762a4f",
+            "fidelity": 6,
+            "score": 0.488724023103714,
+            "val_mse": 0.488724023103714,
+            "status": "ok",
+            "parent_uid": null,
+            "train_time": 629.9279451370239,
+            "config": {
+              "seq_len": 192,
+              "d_model": 768,
+              "n_heads": 8,
+              "e_layers": 4,
+              "d_ff": 256,
+              "dropout": 0.087727,
+              "learning_rate": 0.0005762000933694784,
+              "batch_size": 512,
+              "csg_reduction": 8
+            },
+            "extra": {
+              "seed": 2026,
+              "resume_requested": false,
+              "resume_supported": false,
+              "resume_ckpt": null,
+              "save_ckpt_requested": false,
+              "candidate_tag": "pf_s2026_st101_ep6_5c472a",
+              "model_name": "iTransformer_CSG",
+              "setting": "WQ_GENERIC_60_iTransformer_CSG_pl60_sl192_bs512_pf_s2026_st101_ep6_fbbeee9242",
+              "params": 11382940,
+              "requested_fidelity": 6,
+              "effective_patience": 3
+            }
+          },
+          {
+            "uid": "93cf9187dc96",
+            "fidelity": 6,
+            "score": 0.49123868346214294,
+            "val_mse": 0.49123868346214294,
+            "status": "ok",
+            "parent_uid": null,
+            "train_time": 1194.5875027179718,
+            "config": {
+              "seq_len": 192,
+              "d_model": 768,
+              "n_heads": 8,
+              "e_layers": 3,
+              "d_ff": 4096,
+              "dropout": 0.088797,
+              "learning_rate": 0.0001864601792027156,
+              "batch_size": 512,
+              "csg_reduction": 4
+            },
+            "extra": {
+              "seed": 2026,
+              "resume_requested": false,
+              "resume_supported": false,
+              "resume_ckpt": null,
+              "save_ckpt_requested": false,
+              "candidate_tag": "pf_s2026_st101_ep6_ad0a43",
+              "model_name": "iTransformer_CSG",
+              "setting": "WQ_GENERIC_60_iTransformer_CSG_pl60_sl192_bs512_pf_s2026_st101_ep6_f7c8d3c20f",
+              "params": 26477052,
+              "requested_fidelity": 6,
+              "effective_patience": 3
+            }
+          },
+          {
+            "uid": "7103b2455b85",
+            "fidelity": 6,
+            "score": 0.48941105604171753,
+            "val_mse": 0.48941105604171753,
+            "status": "ok",
+            "parent_uid": null,
+            "train_time": 491.3452832698822,
+            "config": {
+              "seq_len": 192,
+              "d_model": 384,
+              "n_heads": 12,
+              "e_layers": 3,
+              "d_ff": 512,
+              "dropout": 0.109816,
+              "learning_rate": 0.0002603927926472226,
+              "batch_size": 128,
+              "csg_reduction": 4
+            },
+            "extra": {
+              "seed": 2026,
+              "resume_requested": false,
+              "resume_supported": false,
+              "resume_ckpt": null,
+              "save_ckpt_requested": false,
+              "candidate_tag": "pf_s2026_st101_ep6_366deb",
+              "model_name": "iTransformer_CSG",
+              "setting": "WQ_GENERIC_60_iTransformer_CSG_pl60_sl192_bs128_pf_s2026_st101_ep6_787cfa809e",
+              "params": 3133212,
+              "requested_fidelity": 6,
+              "effective_patience": 3
+            }
+          },
+          {
+            "uid": "6dc17ac33222",
+            "fidelity": 20,
+            "score": 0.4900553822517395,
+            "val_mse": 0.4900553822517395,
+            "status": "ok",
+            "parent_uid": null,
+            "train_time": 1809.0588507652283,
+            "config": {
+              "seq_len": 192,
+              "d_model": 768,
+              "n_heads": 8,
+              "e_layers": 4,
+              "d_ff": 256,
+              "dropout": 0.087727,
+              "learning_rate": 0.0005762000933694784,
+              "batch_size": 512,
+              "csg_reduction": 8
+            },
+            "extra": {
+              "seed": 2026,
+              "resume_requested": false,
+              "resume_supported": false,
+              "resume_ckpt": null,
+              "save_ckpt_requested": false,
+              "candidate_tag": "pf_s2026_st102_ep20_893133",
+              "model_name": "iTransformer_CSG",
+              "setting": "WQ_GENERIC_60_iTransformer_CSG_pl60_sl192_bs512_pf_s2026_st102_ep2_f50b90ed1a",
+              "params": 11382940,
+              "requested_fidelity": 20,
+              "effective_patience": 3
+            }
+          },
+          {
+            "uid": "21ab59b25ffa",
+            "fidelity": 7,
+            "score": 0.4898756742477417,
+            "val_mse": 0.4898756742477417,
+            "status": "ok",
+            "parent_uid": null,
+            "train_time": 543.2675187587738,
+            "config": {
+              "seq_len": 192,
+              "d_model": 512,
+              "n_heads": 8,
+              "e_layers": 3,
+              "d_ff": 2048,
+              "dropout": 0.125285,
+              "learning_rate": 0.00020996679466736134,
+              "batch_size": 512,
+              "csg_reduction": 4
+            },
+            "extra": {
+              "seed": 2026,
+              "resume_requested": false,
+              "resume_supported": false,
+              "resume_ckpt": null,
+              "save_ckpt_requested": false,
+              "candidate_tag": "pf_s2026_st200_ep7_cd7d1f",
+              "model_name": "iTransformer_CSG",
+              "setting": "WQ_GENERIC_60_iTransformer_CSG_pl60_sl192_bs512_pf_s2026_st200_ep7_03b0d56ffa",
+              "params": 9719484,
+              "requested_fidelity": 7,
+              "effective_patience": 3
+            }
+          },
+          {
+            "uid": "41f43fe69f5a",
+            "fidelity": 7,
+            "score": 0.517307698726654,
+            "val_mse": 0.517307698726654,
+            "status": "ok",
+            "parent_uid": null,
+            "train_time": 567.8155410289764,
+            "config": {
+              "seq_len": 96,
+              "d_model": 256,
+              "n_heads": 2,
+              "e_layers": 4,
+              "d_ff": 1024,
+              "dropout": 0.118734,
+              "learning_rate": 0.00022942974832661675,
+              "batch_size": 128,
+              "csg_reduction": 8
+            },
+            "extra": {
+              "seed": 2026,
+              "resume_requested": false,
+              "resume_supported": false,
+              "resume_ckpt": null,
+              "save_ckpt_requested": false,
+              "candidate_tag": "pf_s2026_st200_ep7_5a7120",
+              "model_name": "iTransformer_CSG",
+              "setting": "WQ_GENERIC_60_iTransformer_CSG_pl60_sl96_bs128_pf_s2026_st200_ep7_98d236e4b3",
+              "params": 3216476,
+              "requested_fidelity": 7,
+              "effective_patience": 3
+            }
+          },
+          {
+            "uid": "adb359be9201",
+            "fidelity": 7,
+            "score": 0.5096623301506042,
+            "val_mse": 0.5096623301506042,
+            "status": "ok",
+            "parent_uid": null,
+            "train_time": 1337.3608441352844,
+            "config": {
+              "seq_len": 96,
+              "d_model": 384,
+              "n_heads": 8,
+              "e_layers": 6,
+              "d_ff": 2048,
+              "dropout": 0.133676,
+              "learning_rate": 0.0004977411118861266,
+              "batch_size": 256,
+              "csg_reduction": 4
+            },
+            "extra": {
+              "seed": 2026,
+              "resume_requested": false,
+              "resume_supported": false,
+              "resume_ckpt": null,
+              "save_ckpt_requested": false,
+              "candidate_tag": "pf_s2026_st200_ep7_7300d5",
+              "model_name": "iTransformer_CSG",
+              "setting": "WQ_GENERIC_60_iTransformer_CSG_pl60_sl96_bs256_pf_s2026_st200_ep7_3b1d0b21ef",
+              "params": 13144476,
+              "requested_fidelity": 7,
+              "effective_patience": 3
+            }
+          },
+          {
+            "uid": "f35e53b03187",
+            "fidelity": 7,
+            "score": 0.5039001703262329,
+            "val_mse": 0.5039001703262329,
+            "status": "ok",
+            "parent_uid": null,
+            "train_time": 509.9744608402252,
+            "config": {
+              "seq_len": 512,
+              "d_model": 128,
+              "n_heads": 8,
+              "e_layers": 6,
+              "d_ff": 1024,
+              "dropout": 0.117938,
+              "learning_rate": 0.0005594468084952459,
+              "batch_size": 512,
+              "csg_reduction": 8
+            },
+            "extra": {
+              "seed": 2026,
+              "resume_requested": false,
+              "resume_supported": false,
+              "resume_ckpt": null,
+              "save_ckpt_requested": false,
+              "candidate_tag": "pf_s2026_st200_ep7_32c5da",
+              "model_name": "iTransformer_CSG",
+              "setting": "WQ_GENERIC_60_iTransformer_CSG_pl60_sl512_bs512_pf_s2026_st200_ep7_b2ae6361db",
+              "params": 2057036,
+              "requested_fidelity": 7,
+              "effective_patience": 3
+            }
+          },
+          {
+            "uid": "98f0afb4aed2",
+            "fidelity": 7,
+            "score": 0.506546139717102,
+            "val_mse": 0.506546139717102,
+            "status": "ok",
+            "parent_uid": null,
+            "train_time": 441.0866858959198,
+            "config": {
+              "seq_len": 192,
+              "d_model": 128,
+              "n_heads": 4,
+              "e_layers": 3,
+              "d_ff": 128,
+              "dropout": 0.162133,
+              "learning_rate": 0.00018323657620106386,
+              "batch_size": 128,
+              "csg_reduction": 4
+            },
+            "extra": {
+              "seed": 2026,
+              "resume_requested": false,
+              "resume_supported": false,
+              "resume_ckpt": null,
+              "save_ckpt_requested": false,
+              "candidate_tag": "pf_s2026_st200_ep7_0dffb6",
+              "model_name": "iTransformer_CSG",
+              "setting": "WQ_GENERIC_60_iTransformer_CSG_pl60_sl192_bs128_pf_s2026_st200_ep7_e305219bd1",
+              "params": 339804,
+              "requested_fidelity": 7,
+              "effective_patience": 3
+            }
+          },
+          {
+            "uid": "3aea4e856df6",
+            "fidelity": 20,
+            "score": 0.4892221987247467,
+            "val_mse": 0.4892221987247467,
+            "status": "ok",
+            "parent_uid": null,
+            "train_time": 1724.0421488285065,
+            "config": {
+              "seq_len": 192,
+              "d_model": 512,
+              "n_heads": 8,
+              "e_layers": 3,
+              "d_ff": 2048,
+              "dropout": 0.125285,
+              "learning_rate": 0.00020996679466736134,
+              "batch_size": 512,
+              "csg_reduction": 4
+            },
+            "extra": {
+              "seed": 2026,
+              "resume_requested": false,
+              "resume_supported": false,
+              "resume_ckpt": null,
+              "save_ckpt_requested": false,
+              "candidate_tag": "pf_s2026_st201_ep20_6073fa",
+              "model_name": "iTransformer_CSG",
+              "setting": "WQ_GENERIC_60_iTransformer_CSG_pl60_sl192_bs512_pf_s2026_st201_ep2_715cbd2ad6",
+              "params": 9719484,
+              "requested_fidelity": 20,
+              "effective_patience": 3
+            }
+          },
+          {
+            "uid": "81288d8863e3",
+            "fidelity": 20,
+            "score": 0.7482898235321045,
+            "val_mse": 0.7482898235321045,
+            "status": "ok",
+            "parent_uid": null,
+            "train_time": 784.7623336315155,
+            "config": {
+              "seq_len": 48,
+              "d_model": 512,
+              "n_heads": 16,
+              "e_layers": 1,
+              "d_ff": 2048,
+              "dropout": 0.087176,
+              "learning_rate": 0.00027962008624878747,
+              "batch_size": 256,
+              "csg_reduction": 8
+            },
+            "extra": {
+              "seed": 2026,
+              "resume_requested": false,
+              "resume_supported": false,
+              "resume_ckpt": null,
+              "save_ckpt_requested": false,
+              "candidate_tag": "pf_s2026_st300_ep20_ba6cc0",
+              "model_name": "iTransformer_CSG",
+              "setting": "WQ_GENERIC_60_iTransformer_CSG_pl60_sl48_bs256_pf_s2026_st300_ep2_4a432a618a",
+              "params": 3275388,
+              "requested_fidelity": 20,
+              "effective_patience": 3
+            }
+          },
+          {
+            "uid": "c35c0ec93398",
+            "fidelity": 20,
+            "score": 0.4926362633705139,
+            "val_mse": 0.4926362633705139,
+            "status": "ok",
+            "parent_uid": null,
+            "train_time": 1561.440290927887,
+            "config": {
+              "seq_len": 336,
+              "d_model": 512,
+              "n_heads": 4,
+              "e_layers": 3,
+              "d_ff": 1024,
+              "dropout": 0.165429,
+              "learning_rate": 0.0005424276256679457,
+              "batch_size": 128,
+              "csg_reduction": 8
+            },
+            "extra": {
+              "seed": 2026,
+              "resume_requested": false,
+              "resume_supported": false,
+              "resume_ckpt": null,
+              "save_ckpt_requested": false,
+              "candidate_tag": "pf_s2026_st300_ep20_1b4cc5",
+              "model_name": "iTransformer_CSG",
+              "setting": "WQ_GENERIC_60_iTransformer_CSG_pl60_sl336_bs128_pf_s2026_st300_ep2_c5f99416ab",
+              "params": 6578812,
+              "requested_fidelity": 20,
+              "effective_patience": 3
+            }
+          },
+          {
+            "uid": "895c6cd4735e",
+            "fidelity": 20,
+            "score": 0.514965832233429,
+            "val_mse": 0.514965832233429,
+            "status": "ok",
+            "parent_uid": null,
+            "train_time": 3877.6549780368805,
+            "config": {
+              "seq_len": 96,
+              "d_model": 256,
+              "n_heads": 8,
+              "e_layers": 8,
+              "d_ff": 2048,
+              "dropout": 0.125708,
+              "learning_rate": 9.48362159969377e-05,
+              "batch_size": 256,
+              "csg_reduction": 8
+            },
+            "extra": {
+              "seed": 2026,
+              "resume_requested": false,
+              "resume_supported": false,
+              "resume_ckpt": null,
+              "save_ckpt_requested": false,
+              "candidate_tag": "pf_s2026_st300_ep20_c4adc1",
+              "model_name": "iTransformer_CSG",
+              "setting": "WQ_GENERIC_60_iTransformer_CSG_pl60_sl96_bs256_pf_s2026_st300_ep2_e55b7743dd",
+              "params": 10578012,
+              "requested_fidelity": 20,
+              "effective_patience": 3
+            }
+          },
+          {
+            "uid": "09ff14a619fe",
+            "fidelity": 2,
+            "score": 0.4997936487197876,
+            "val_mse": 0.4997936487197876,
+            "status": "ok",
+            "parent_uid": null,
+            "train_time": 484.03396368026733,
+            "config": {
+              "seq_len": 336,
+              "d_model": 768,
+              "n_heads": 6,
+              "e_layers": 3,
+              "d_ff": 2048,
+              "dropout": 0.128005,
+              "learning_rate": 0.00011890825605637049,
+              "batch_size": 64,
+              "csg_reduction": 4
+            },
+            "extra": {
+              "seed": 2026,
+              "resume_requested": false,
+              "resume_supported": false,
+              "resume_ckpt": null,
+              "save_ckpt_requested": false,
+              "candidate_tag": "pf_s2026_st400_ep2_c1e241",
+              "model_name": "iTransformer_CSG",
+              "setting": "WQ_GENERIC_60_iTransformer_CSG_pl60_sl336_bs64_pf_s2026_st400_ep2_a7f23b77ed",
+              "params": 17144316,
+              "requested_fidelity": 2,
+              "effective_patience": 2
+            }
+          },
+          {
+            "uid": "260c9b705373",
+            "fidelity": 2,
+            "score": 0.5054798722267151,
+            "val_mse": 0.5054798722267151,
+            "status": "ok",
+            "parent_uid": null,
+            "train_time": 305.70918321609497,
+            "config": {
+              "seq_len": 512,
+              "d_model": 384,
+              "n_heads": 6,
+              "e_layers": 3,
+              "d_ff": 2048,
+              "dropout": 0.053869,
+              "learning_rate": 0.00022372299072524485,
+              "batch_size": 128,
+              "csg_reduction": 4
+            },
+            "extra": {
+              "seed": 2026,
+              "resume_requested": false,
+              "resume_supported": false,
+              "resume_ckpt": null,
+              "save_ckpt_requested": false,
+              "candidate_tag": "pf_s2026_st400_ep2_961998",
+              "model_name": "iTransformer_CSG",
+              "setting": "WQ_GENERIC_60_iTransformer_CSG_pl60_sl512_bs128_pf_s2026_st400_ep2_daf66ef103",
+              "params": 6799644,
+              "requested_fidelity": 2,
+              "effective_patience": 2
+            }
+          },
+          {
+            "uid": "dec2140d65c2",
+            "fidelity": 2,
+            "score": 0.5281763672828674,
+            "val_mse": 0.5281763672828674,
+            "status": "ok",
+            "parent_uid": null,
+            "train_time": 260.1257736682892,
+            "config": {
+              "seq_len": 96,
+              "d_model": 256,
+              "n_heads": 16,
+              "e_layers": 4,
+              "d_ff": 2048,
+              "dropout": 0.073084,
+              "learning_rate": 0.0002279207333354425,
+              "batch_size": 128,
+              "csg_reduction": 4
+            },
+            "extra": {
+              "seed": 2026,
+              "resume_requested": false,
+              "resume_supported": false,
+              "resume_ckpt": null,
+              "save_ckpt_requested": false,
+              "candidate_tag": "pf_s2026_st400_ep2_c6ffed",
+              "model_name": "iTransformer_CSG",
+              "setting": "WQ_GENERIC_60_iTransformer_CSG_pl60_sl96_bs128_pf_s2026_st400_ep2_ef13178355",
+              "params": 5334140,
+              "requested_fidelity": 2,
+              "effective_patience": 2
+            }
+          },
+          {
+            "uid": "6cfa82bef961",
+            "fidelity": 2,
+            "score": 0.5260201096534729,
+            "val_mse": 0.5260201096534729,
+            "status": "ok",
+            "parent_uid": null,
+            "train_time": 108.04064226150513,
+            "config": {
+              "seq_len": 192,
+              "d_model": 512,
+              "n_heads": 2,
+              "e_layers": 3,
+              "d_ff": 256,
+              "dropout": 0.188218,
+              "learning_rate": 8.76344321026843e-05,
+              "batch_size": 256,
+              "csg_reduction": 8
+            },
+            "extra": {
+              "seed": 2026,
+              "resume_requested": false,
+              "resume_supported": false,
+              "resume_ckpt": null,
+              "save_ckpt_requested": false,
+              "candidate_tag": "pf_s2026_st400_ep2_4f3676",
+              "model_name": "iTransformer_CSG",
+              "setting": "WQ_GENERIC_60_iTransformer_CSG_pl60_sl192_bs256_pf_s2026_st400_ep2_1fdae290cd",
+              "params": 4143484,
+              "requested_fidelity": 2,
+              "effective_patience": 2
+            }
+          },
+          {
+            "uid": "0ba7df8a85a0",
+            "fidelity": 2,
+            "score": 0.4965420663356781,
+            "val_mse": 0.4965420663356781,
+            "status": "ok",
+            "parent_uid": null,
+            "train_time": 460.3571195602417,
+            "config": {
+              "seq_len": 192,
+              "d_model": 768,
+              "n_heads": 4,
+              "e_layers": 6,
+              "d_ff": 2048,
+              "dropout": 0.069371,
+              "learning_rate": 0.00023271101326884092,
+              "batch_size": 256,
+              "csg_reduction": 8
+            },
+            "extra": {
+              "seed": 2026,
+              "resume_requested": false,
+              "resume_supported": false,
+              "resume_ckpt": null,
+              "save_ckpt_requested": false,
+              "candidate_tag": "pf_s2026_st400_ep2_f19f36",
+              "model_name": "iTransformer_CSG",
+              "setting": "WQ_GENERIC_60_iTransformer_CSG_pl60_sl192_bs256_pf_s2026_st400_ep2_2dd9a33032",
+              "params": 33428124,
+              "requested_fidelity": 2,
+              "effective_patience": 2
+            }
+          },
+          {
+            "uid": "820c3e6bf710",
+            "fidelity": 2,
+            "score": 0.502823531627655,
+            "val_mse": 0.502823531627655,
+            "status": "ok",
+            "parent_uid": null,
+            "train_time": 156.69969701766968,
+            "config": {
+              "seq_len": 512,
+              "d_model": 384,
+              "n_heads": 12,
+              "e_layers": 3,
+              "d_ff": 512,
+              "dropout": 0.112113,
+              "learning_rate": 9.373920558640758e-05,
+              "batch_size": 128,
+              "csg_reduction": 4
+            },
+            "extra": {
+              "seed": 2026,
+              "resume_requested": false,
+              "resume_supported": false,
+              "resume_ckpt": null,
+              "save_ckpt_requested": false,
+              "candidate_tag": "pf_s2026_st400_ep2_e6d515",
+              "model_name": "iTransformer_CSG",
+              "setting": "WQ_GENERIC_60_iTransformer_CSG_pl60_sl512_bs128_pf_s2026_st400_ep2_c633d14273",
+              "params": 3256092,
+              "requested_fidelity": 2,
+              "effective_patience": 2
+            }
+          },
+          {
+            "uid": "5cc571e0dfba",
+            "fidelity": 2,
+            "score": 0.5269176959991455,
+            "val_mse": 0.5269176959991455,
+            "status": "ok",
+            "parent_uid": null,
+            "train_time": 254.2733335494995,
+            "config": {
+              "seq_len": 96,
+              "d_model": 384,
+              "n_heads": 12,
+              "e_layers": 3,
+              "d_ff": 512,
+              "dropout": 0.098868,
+              "learning_rate": 0.00021130788598881407,
+              "batch_size": 64,
+              "csg_reduction": 8
+            },
+            "extra": {
+              "seed": 2026,
+              "resume_requested": false,
+              "resume_supported": false,
+              "resume_ckpt": null,
+              "save_ckpt_requested": false,
+              "candidate_tag": "pf_s2026_st400_ep2_460ab0",
+              "model_name": "iTransformer_CSG",
+              "setting": "WQ_GENERIC_60_iTransformer_CSG_pl60_sl96_bs64_pf_s2026_st400_ep2_aa941f91c6",
+              "params": 3059436,
+              "requested_fidelity": 2,
+              "effective_patience": 2
+            }
+          },
+          {
+            "uid": "7ef4e3fc2b69",
+            "fidelity": 2,
+            "score": 0.5007712244987488,
+            "val_mse": 0.5007712244987488,
+            "status": "ok",
+            "parent_uid": null,
+            "train_time": 343.45513582229614,
+            "config": {
+              "seq_len": 336,
+              "d_model": 768,
+              "n_heads": 12,
+              "e_layers": 2,
+              "d_ff": 4096,
+              "dropout": 0.181793,
+              "learning_rate": 0.0002938318372090449,
+              "batch_size": 128,
+              "csg_reduction": 8
+            },
+            "extra": {
+              "seed": 2026,
+              "resume_requested": false,
+              "resume_supported": false,
+              "resume_ckpt": null,
+              "save_ckpt_requested": false,
+              "candidate_tag": "pf_s2026_st400_ep2_975bb7",
+              "model_name": "iTransformer_CSG",
+              "setting": "WQ_GENERIC_60_iTransformer_CSG_pl60_sl336_bs128_pf_s2026_st400_ep2_23d40000b4",
+              "params": 17778332,
+              "requested_fidelity": 2,
+              "effective_patience": 2
+            }
+          },
+          {
+            "uid": "ea72ee14484d",
+            "fidelity": 2,
+            "score": 0.5073890686035156,
+            "val_mse": 0.5073890686035156,
+            "status": "ok",
+            "parent_uid": null,
+            "train_time": 119.57462239265442,
+            "config": {
+              "seq_len": 336,
+              "d_model": 512,
+              "n_heads": 16,
+              "e_layers": 3,
+              "d_ff": 256,
+              "dropout": 0.1343,
+              "learning_rate": 0.00025346369733116655,
+              "batch_size": 256,
+              "csg_reduction": 4
+            },
+            "extra": {
+              "seed": 2026,
+              "resume_requested": false,
+              "resume_supported": false,
+              "resume_ckpt": null,
+              "save_ckpt_requested": false,
+              "candidate_tag": "pf_s2026_st400_ep2_9758ee",
+              "model_name": "iTransformer_CSG",
+              "setting": "WQ_GENERIC_60_iTransformer_CSG_pl60_sl336_bs256_pf_s2026_st400_ep2_9c83af3010",
+              "params": 4282812,
+              "requested_fidelity": 2,
+              "effective_patience": 2
+            }
+          },
+          {
+            "uid": "f904e9b50637",
+            "fidelity": 6,
+            "score": 0.488653302192688,
+            "val_mse": 0.488653302192688,
+            "status": "ok",
+            "parent_uid": null,
+            "train_time": 1473.2894361019135,
+            "config": {
+              "seq_len": 192,
+              "d_model": 768,
+              "n_heads": 4,
+              "e_layers": 6,
+              "d_ff": 2048,
+              "dropout": 0.069371,
+              "learning_rate": 0.00023271101326884092,
+              "batch_size": 256,
+              "csg_reduction": 8
+            },
+            "extra": {
+              "seed": 2026,
+              "resume_requested": false,
+              "resume_supported": false,
+              "resume_ckpt": null,
+              "save_ckpt_requested": false,
+              "candidate_tag": "pf_s2026_st401_ep6_c8eca8",
+              "model_name": "iTransformer_CSG",
+              "setting": "WQ_GENERIC_60_iTransformer_CSG_pl60_sl192_bs256_pf_s2026_st401_ep6_baf5df3acb",
+              "params": 33428124,
+              "requested_fidelity": 6,
+              "effective_patience": 3
+            }
+          },
+          {
+            "uid": "8302739c3df4",
+            "fidelity": 6,
+            "score": 0.4957362115383148,
+            "val_mse": 0.4957362115383148,
+            "status": "ok",
+            "parent_uid": null,
+            "train_time": 1216.8073108196259,
+            "config": {
+              "seq_len": 336,
+              "d_model": 768,
+              "n_heads": 6,
+              "e_layers": 3,
+              "d_ff": 2048,
+              "dropout": 0.128005,
+              "learning_rate": 0.00011890825605637049,
+              "batch_size": 64,
+              "csg_reduction": 4
+            },
+            "extra": {
+              "seed": 2026,
+              "resume_requested": false,
+              "resume_supported": false,
+              "resume_ckpt": null,
+              "save_ckpt_requested": false,
+              "candidate_tag": "pf_s2026_st401_ep6_a72f28",
+              "model_name": "iTransformer_CSG",
+              "setting": "WQ_GENERIC_60_iTransformer_CSG_pl60_sl336_bs64_pf_s2026_st401_ep6_736a64accc",
+              "params": 17144316,
+              "requested_fidelity": 6,
+              "effective_patience": 3
+            }
+          },
+          {
+            "uid": "e80c3866fc69",
+            "fidelity": 6,
+            "score": 0.49715813994407654,
+            "val_mse": 0.49715813994407654,
+            "status": "ok",
+            "parent_uid": null,
+            "train_time": 954.7644972801208,
+            "config": {
+              "seq_len": 336,
+              "d_model": 768,
+              "n_heads": 12,
+              "e_layers": 2,
+              "d_ff": 4096,
+              "dropout": 0.181793,
+              "learning_rate": 0.0002938318372090449,
+              "batch_size": 128,
+              "csg_reduction": 8
+            },
+            "extra": {
+              "seed": 2026,
+              "resume_requested": false,
+              "resume_supported": false,
+              "resume_ckpt": null,
+              "save_ckpt_requested": false,
+              "candidate_tag": "pf_s2026_st401_ep6_90ef3d",
+              "model_name": "iTransformer_CSG",
+              "setting": "WQ_GENERIC_60_iTransformer_CSG_pl60_sl336_bs128_pf_s2026_st401_ep6_d97396fa75",
+              "params": 17778332,
+              "requested_fidelity": 6,
+              "effective_patience": 3
+            }
+          },
+          {
+            "uid": "bad5bcf501b6",
+            "fidelity": 20,
+            "score": 0.4924132227897644,
+            "val_mse": 0.4924132227897644,
+            "status": "ok",
+            "parent_uid": null,
+            "train_time": 5154.5458726882935,
+            "config": {
+              "seq_len": 192,
+              "d_model": 768,
+              "n_heads": 4,
+              "e_layers": 6,
+              "d_ff": 2048,
+              "dropout": 0.069371,
+              "learning_rate": 0.00023271101326884092,
+              "batch_size": 256,
+              "csg_reduction": 8
+            },
+            "extra": {
+              "seed": 2026,
+              "resume_requested": false,
+              "resume_supported": false,
+              "resume_ckpt": null,
+              "save_ckpt_requested": false,
+              "candidate_tag": "pf_s2026_st402_ep20_093b06",
+              "model_name": "iTransformer_CSG",
+              "setting": "WQ_GENERIC_60_iTransformer_CSG_pl60_sl192_bs256_pf_s2026_st402_ep2_34f194e127",
+              "params": 33428124,
+              "requested_fidelity": 20,
+              "effective_patience": 3
+            }
+          }
+        ],
+        "archive_size": 35
+      }
+    ],
+    "search_time_sec": 36930.88338470459,
+    "archive_size": 35
+  },
+  "final_summary": {
+    "mse_mean": 0.4653741419315338,
+    "mse_std": 0.0010527661191763514,
+    "mae_mean": 0.44551117221514386,
+    "mae_std": 0.0005218544823717632,
+    "n_seeds": 3,
+    "key_mse_mean": 0.23740839461485544,
+    "key_mse_std": 0.0009758718054406779,
+    "key_mae_mean": 0.2564762532711029,
+    "key_mae_std": 0.00046910106841380065,
+    "key_rmse_mean": 0.48724469542503357,
+    "key_rmse_std": 0.0010007892621941772
+  }
+}

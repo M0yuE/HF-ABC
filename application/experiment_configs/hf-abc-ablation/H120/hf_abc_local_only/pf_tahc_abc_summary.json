@@ -1,0 +1,294 @@
+{
+  "method": "pf_tahc_abc",
+  "display_name": "HF-ABC",
+  "method_full_name": "Hybrid Fidelity-guided Artificial Bee Colony",
+  "search_seeds": [
+    2026
+  ],
+  "final_seeds": [
+    2026,
+    2027,
+    2028
+  ],
+  "search_summary": {
+    "method": "pf_tahc_abc",
+    "display_name": "HF-ABC",
+    "method_full_name": "Hybrid Fidelity-guided Artificial Bee Colony",
+    "hf_abc": true,
+    "race_fidelities": [
+      1,
+      3,
+      6,
+      10
+    ],
+    "race_init_size": 48,
+    "race_keep": [
+      16,
+      8,
+      4,
+      4
+    ],
+    "race_challengers": [
+      0,
+      8,
+      4,
+      0
+    ],
+    "verify_top_k": 4,
+    "verify_epochs": 20,
+    "verify_seed": 2026,
+    "selected_search_seed": 2026,
+    "selected_best_config": {
+      "seq_len": 512,
+      "d_model": 256,
+      "n_heads": 16,
+      "e_layers": 3,
+      "d_ff": 512,
+      "dropout": 0.112113,
+      "learning_rate": 9.373920558640758e-05,
+      "batch_size": 256,
+      "csg_reduction": 4
+    },
+    "selected_val_mse": 0.6070712804794312,
+    "per_search_seed": [
+      {
+        "search_seed": 2026,
+        "selected_config": {
+          "seq_len": 512,
+          "d_model": 256,
+          "n_heads": 16,
+          "e_layers": 3,
+          "d_ff": 512,
+          "dropout": 0.112113,
+          "learning_rate": 9.373920558640758e-05,
+          "batch_size": 256,
+          "csg_reduction": 4
+        },
+        "selected_score": 0.6070712804794312,
+        "selected_val_mse": 0.6070712804794312,
+        "stage_summaries": [
+          {
+            "stage": 0,
+            "fidelity": 1,
+            "n_active": 48,
+            "n_unique": 48,
+            "n_evaluated": 48,
+            "keep_n": 16,
+            "best_score": 0.6078209280967712,
+            "best_val_mse": 0.6078209280967712,
+            "best_config": {
+              "seq_len": 512,
+              "d_model": 256,
+              "n_heads": 16,
+              "e_layers": 6,
+              "d_ff": 2048,
+              "dropout": 0.077824,
+              "learning_rate": 0.00028474381926897846,
+              "batch_size": 256,
+              "csg_reduction": 4
+            },
+            "survivor_uids": [
+              "8015444bf934",
+              "052419f27dbd",
+              "ed152cfc2cfb",
+              "9289a5a8c672",
+              "9c7251073fd8",
+              "797e7f8538e6",
+              "fe0ef3025f96",
+              "f0527df18e19",
+              "ded83ead185d",
+              "44b794bd057f",
+              "1705d70e015f",
+              "96296181b1da",
+              "36b8a10f514e",
+              "49d07122f258",
+              "cdd4a7e73180",
+              "8704799a4c6f"
+            ]
+          },
+          {
+            "stage": 1,
+            "fidelity": 3,
+            "n_active": 24,
+            "n_unique": 24,
+            "n_evaluated": 24,
+            "keep_n": 8,
+            "best_score": 0.6067116260528564,
+            "best_val_mse": 0.6067116260528564,
+            "best_config": {
+              "seq_len": 512,
+              "d_model": 256,
+              "n_heads": 16,
+              "e_layers": 3,
+              "d_ff": 512,
+              "dropout": 0.112113,
+              "learning_rate": 9.373920558640758e-05,
+              "batch_size": 128,
+              "csg_reduction": 4
+            },
+            "survivor_uids": [
+              "05afedd2e4f5",
+              "adc68d1f78f7",
+              "7da00b171599",
+              "883c6b588734",
+              "355cb24ea5b4",
+              "24aae2bc02d1",
+              "e2f6b0703637",
+              "d7acea163fd8"
+            ]
+          },
+          {
+            "stage": 2,
+            "fidelity": 6,
+            "n_active": 12,
+            "n_unique": 12,
+            "n_evaluated": 12,
+            "keep_n": 4,
+            "best_score": 0.6062498092651367,
+            "best_val_mse": 0.6062498092651367,
+            "best_config": {
+              "seq_len": 512,
+              "d_model": 256,
+              "n_heads": 16,
+              "e_layers": 3,
+              "d_ff": 512,
+              "dropout": 0.112113,
+              "learning_rate": 9.373920558640758e-05,
+              "batch_size": 256,
+              "csg_reduction": 4
+            },
+            "survivor_uids": [
+              "c7c8d4e3818f",
+              "c370de731bd0",
+              "dffe3b73f142",
+              "5551e23a168b"
+            ]
+          },
+          {
+            "stage": 3,
+            "fidelity": 10,
+            "n_active": 4,
+            "n_unique": 4,
+            "n_evaluated": 4,
+            "keep_n": 4,
+            "best_score": 0.6074033975601196,
+            "best_val_mse": 0.6074033975601196,
+            "best_config": {
+              "seq_len": 512,
+              "d_model": 256,
+              "n_heads": 16,
+              "e_layers": 3,
+              "d_ff": 512,
+              "dropout": 0.112113,
+              "learning_rate": 9.373920558640758e-05,
+              "batch_size": 256,
+              "csg_reduction": 4
+            },
+            "survivor_uids": [
+              "a17c7bbd544c",
+              "5874d8fea8d8",
+              "dccb1281c0c1",
+              "bda265b48ff8"
+            ]
+          }
+        ],
+        "verified": [
+          {
+            "uid": "39a56852c2d3",
+            "score": 0.6070712804794312,
+            "val_mse": 0.6070712804794312,
+            "config": {
+              "seq_len": 512,
+              "d_model": 256,
+              "n_heads": 16,
+              "e_layers": 3,
+              "d_ff": 512,
+              "dropout": 0.112113,
+              "learning_rate": 9.373920558640758e-05,
+              "batch_size": 256,
+              "csg_reduction": 4
+            },
+            "parent_uid": "a17c7bbd544c",
+            "status": "ok"
+          },
+          {
+            "uid": "75d55c646b7c",
+            "score": 0.608508288860321,
+            "val_mse": 0.608508288860321,
+            "config": {
+              "seq_len": 512,
+              "d_model": 128,
+              "n_heads": 4,
+              "e_layers": 3,
+              "d_ff": 2048,
+              "dropout": 0.053869,
+              "learning_rate": 0.00022372299072524485,
+              "batch_size": 128,
+              "csg_reduction": 4
+            },
+            "parent_uid": "5874d8fea8d8",
+            "status": "ok"
+          },
+          {
+            "uid": "2cf37acedd89",
+            "score": 0.609157383441925,
+            "val_mse": 0.609157383441925,
+            "config": {
+              "seq_len": 512,
+              "d_model": 256,
+              "n_heads": 16,
+              "e_layers": 3,
+              "d_ff": 512,
+              "dropout": 0.112113,
+              "learning_rate": 8e-05,
+              "batch_size": 128,
+              "csg_reduction": 4
+            },
+            "parent_uid": "dccb1281c0c1",
+            "status": "ok"
+          },
+          {
+            "uid": "b07ee69c74d0",
+            "score": 0.6111953854560852,
+            "val_mse": 0.6111953854560852,
+            "config": {
+              "seq_len": 512,
+              "d_model": 256,
+              "n_heads": 16,
+              "e_layers": 3,
+              "d_ff": 512,
+              "dropout": 0.112113,
+              "learning_rate": 9.373920558640758e-05,
+              "batch_size": 128,
+              "csg_reduction": 4
+            },
+            "parent_uid": "bda265b48ff8",
+            "status": "ok"
+          }
+        ],
+        "archive_size": 92
+      }
+    ],
+    "archive_size": 92,
+    "elite_refine_ratio": 1.0,
+    "elite_struct_ratio": 0.0,
+    "elite_random_ratio": 0.0,
+    "elite_top_m": 4,
+    "elite_lr_sigma": 0.2,
+    "elite_dropout_sigma": 0.02,
+    "elite_max_tries": 50
+  },
+  "final_summary": {
+    "n_seeds": 3,
+    "mse_mean": 0.5848082701365153,
+    "mse_std": 0.00044025725194684446,
+    "mae_mean": 0.5359412431716919,
+    "mae_std": 0.00014684687838765388,
+    "key_mse_mean": 0.38288917144139606,
+    "key_mse_std": 0.001393237798105708,
+    "key_mae_mean": 0.3291647533575694,
+    "key_mae_std": 0.00032434274821090754,
+    "key_rmse_mean": 0.6187793811162313,
+    "key_rmse_std": 0.0011252398759926375
+  }
+}
